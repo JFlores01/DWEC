@@ -10,12 +10,15 @@
 #msg{
     color: brown;
     background-color: chartreuse;
+    margin-top: 5px;
+   
 
 }
 
 #letras{
 
 color: blue;
+
 
 }
 
@@ -24,3 +27,4 @@ color: blue;
     background-color: black;
     font-size: 30px;
 }
+
