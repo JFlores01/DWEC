@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Games</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor-principal {
+            background-image: url('./images/epic.jpg');
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <h1>Rellene el formulario por favor.</h1>
+
+        <form name="form" id="form" action="#" method="POST">
+
+            <p>Nombre:
+                <input type="text" name="nombre" required id="nombre">
+                
+            </p>
+            <p>Apellidos:
+                <input type="text" name="apellido" required id="apellido">
+                
+            </p>
+            <p>Fecha Nacimiento:
+                <input type="date" name="fecha" required id="fecha">
+            </p>
+            <p>
+                Correo:
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                Teléfono:
+                <input type="number" name="tlf" id="tlf" required>
+            </p>
+            <p>
+                DNI:
+                <input type="text" name="dni" id="dni" required>
+            </p>
+            <p>
+                IBAN:
+                <input type="text" name="IBAN" id="IBAN" required>
+            </p>
+            <p>
+                SWIFT:
+                <input type="text" name="swift" id="swift" required>
+            </p>
+            <p>
+                Usuario:
+                <input type="text" name="usuario" id="usuario" required>
+            </p>
+            <p>
+                <button onclick="validacion();">Enviar</button> 
+
+            </p>
+            <p>
+            <h2>Algunos juegos de la plataforma</h2>
+            <ul>
+                <li><b>Fortnite</b></li>
+                <li><b>Borderlands2</b></li>
+                <li><b>Dead By Day light</b></li>
+                <li><b>Rocket League</b></li>
+            </ul>
+            </p>
+
+
+
+
+
+
+
+
+        </form>
+        <script>
+            const formulario = document.getElementById("form");
+
+            formulario.addEventListener("submit", function (event) {
+
+                event.preventDefault();
+                console.log(event);
+                
+
+            })
+        </script>
+        <script src="js/myscript.js"></script>
+    </div>
+</body>
+
+</html>
